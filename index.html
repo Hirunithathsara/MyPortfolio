@@ -11,7 +11,122 @@
     <meta name="owner" content="Hiruni Thathsara">
     <meta name="author" content="Hiruni Thathsara">
     <meta name="theme-color" content="purple">
+    <link rel="stylesheet" href="normalize.css">
     <style>
+
+        body{
+            background-color: black;
+        }
+        body>header{
+            height: 7vh;
+            border: 2px solid black;
+            position: relative;
+            background-color: black;
+        }
+
+        body>header>img{
+            position: relative;
+            width: 15%;
+            height: 70%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>header>nav{
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body>header>nav>ul > li {
+            padding-right: 5%;
+            display: inline-block;
+        }
+
+        body>header>nav>ul > li > a {
+            color: white;
+            font-family: "Times New Roman";
+            font-weight: bold;
+            font-size: 1.2vw;
+            text-decoration: none;
+            transition:.3s ;
+        }
+
+        body>main{
+            height: 90vh;
+            position: relative;
+        }
+        body>main>section>h1 {
+            color: purple;
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 200px;
+            top: 50px;
+            margin: auto;
+            display: inline-block;
+
+        }
+        body>main>section>nav>h5 {
+            color: purple;
+            font-size: 30px;
+            display: flex;
+            position: absolute;
+            right: 600px;
+            top: 350px;
+            margin: auto;
+            display: inline-block;
+
+        }
+        body>main>section>div>img{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: 20px darkorchid;
+            border-radius: 50%;
+            font-size: 20px;
+
+            top:300px;
+            right: 300px;
+            margin:20px ;
+
+        }
+
+        section>aside>div>img{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: black;
+        }
+        body>main>section>h2{
+            color: purple;
+            font-size: 60px;
+            display: flex;
+
+            right: 200px;
+            top: 150px
+            display: inline-block;
+
+        }
+
+
+
+
+
+
+
+
+
+
 
 
     </style>
@@ -19,42 +134,45 @@
 <body>
 
 <header>
-    <nav>
 
-        <menu></menu>
+    <img src="Assest/download1.png" alt="ijse">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutMe </a></li>
+            <li><a href="#">Skils</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">ContactMe</a></li>
+
+        </ul>
     </nav>
 </header>
 <main>
 
     <section>
         <aside>
+            <div>
             <img src="assets/IMG-20230216-WA0050.jpg" width="300" height="400" >
+            </div>
         </aside>
         <h1>
-            Hello
+            Hello,It's Me <div></div>
+            Hiruni Thathsara<div></div>
+            Full stack Developer
         </h1>
-        <h2>
-         I'm Hiruni Thathsara
-        </h2>
-        <h2>
-             Full stack Developer
-        </h2>
-        <nav>Contacts</nav>
+        <nav><h5>Contacts</h5></nav>
         <div>
           <img src=" assets/download.jpg">
-        </div>
-        <div>
             <img src="assets/download.png">
-        </div>
-        <div>
             <img src="assets/git.png">
         </div>
 
     </section>
     <section>
-        <h1>
+        <h2>
             About Me
-        </h1>
+        </h2>
         <p>
             <img src="assets/IMG_20230608_103844_903.jpg"width="300" height="300">
 
@@ -66,13 +184,11 @@
             <b>Ordinary Level</b> at <b> Christ church girls ' college,</b> Galle.
         </sub>
 
-
     </section>
-
     <section>
-        <h1>
+        <h2>
             Skils
-        </h1>
+        </h2>
         <div> <img src="assets/java.png"></div>
         <div> <img src="assets/mysql.png"></div>
         <div> <img src="assets/figma.png"></div>
@@ -83,7 +199,7 @@
         <div> <img src="assets/la.png"></div>
     </section>
     <section>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <div><img src="assets/IMG_20230628_115933_033.jpg" width="400" height="300"></div>
         <h3> GINZA RESTAURANT</h3>
         <div><img src="assets/IMG_20230628_115933_409.jpg" width="400" height="300"></div>
@@ -91,20 +207,19 @@
     </section>
 
     <section>
-        <h1>Gallery</h1>
+        <h2>Gallery</h2>
         <aside><img src="assets/IMG_20230627_160944_062.jpg" width="300" height="300"></aside>
         <aside><img src="assets/IMG-20230123-WA0039.jpg" width="400" height="300"></aside>
         <aside><img src="assets/IMG-20220909-WA0020.jpg" width="400" height="300"></aside>
         <aside><img src="assets/IMG-20230302-WA0049.jpg"width="200" height="300"></aside>
         <aside><img src="assets/IMG_20230628_111153_356.jpg"width="400" height="300"></aside>
 
-
     </section>
 
 </main>
 
 <footer>
-    <h1>Contact Me</h1>
+    <h2>ContactMe</h2>
     <div>
 
         <label for="Name">Name</label>
