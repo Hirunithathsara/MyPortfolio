@@ -28,7 +28,7 @@
             position: relative;
             width: 15%;
             height: 70%;
-            top: 0;
+            top: 10px;
             bottom: 0;
             margin: auto;
         }
@@ -175,9 +175,10 @@
         }
 
 
-        body>main>section>section>section>section>section>aside {
+        body>main>section:nth-child(5)>aside {
 
-            margin-left: 20px;
+
+            margin-left: 200px;
         }
 
         body>main>section:nth-child(3)>div{
@@ -206,6 +207,37 @@
             margin: 30px;
             font-size: 29px;
         }
+        body>main>section>section>section>section>section>section>h2>div{
+            background:orangered;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 2.5rem;
+        }
+        body>main>section:nth-child(6)>div{
+            width: 60%;
+
+            background: black ;
+            color: white;
+
+            outline:none;
+
+
+            margin-top: 30px;
+            margin-right: 10px;
+            margin-left: 250px;
+
+            font-weight: 20;
+            text-align: center;
+            border:2px solid orangered;
+            border-radius: 40px;
+            padding: 5px 2px;
+
+
+        }
+
+
+
 
 
 
@@ -215,7 +247,7 @@
 
 <header>
 
-    <img src="Assest/download1.png" alt="ijse">
+    <h1>HT</h1>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -233,7 +265,7 @@
     <section>
         <aside>
             <div>
-            <img src="assets/IMG-20230216-WA0050.jpg" width="300" height="400" >
+                <img src="assets/IMG-20230216-WA0050.jpg" width="300" height="400" >
             </div>
         </aside>
         <h1>
@@ -307,24 +339,18 @@
 <section>
     <h2>ContactMe</h2>
     <div>
-
-        <label for="Name">Name</label>
-        <input type="Name" id="Name" placeholder="Name">
-
-
-
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Email">
-
-    </div>
-
-    <br>
-    <div>
-        <label for="Messages">Massages</label>
-        <input type="Messages" id="Messages" placeholder="Messages">
+          <br><br>
+         <input type="name" placeholder="Your Name" required> &nbsp; &nbsp;
+        <input type="email" placeholder="Your email address" required> &nbsp; &nbsp;
+        <input type="" placeholder="Your Mobile Number" required>
+        <div></div> <br> <br>
+         <textarea name=" "id=" " cols=" 45" rows="20" placeholder="How Can I Help You" required></textarea>&nbsp;&nbsp;
+        <input type="submit" value="Send Message" class="submit" required>
         <br>
-        <sub></sub>
+
     </div>
+
+
 
 </section>
 </main>
