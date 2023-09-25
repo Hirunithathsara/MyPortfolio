@@ -24,14 +24,7 @@
             background-color: #2f242d;
         }
 
-        body>header>img{
-            position: relative;
-            width: 15%;
-            height: 70%;
-            top: 10px;
-            bottom: 0;
-            margin: auto;
-        }
+
         body>header>nav{
             position: absolute;
             width: 40%;
@@ -41,6 +34,16 @@
             right: 0;
             margin: auto;
         }
+        body>header>nav a{
+            font-size: 1.7rem;
+            color: white;
+            margin-left: -1.1rem;
+            transition: .3s;
+
+        }
+        nav a:hover{
+            color: orangered;
+        }
 
         body>header>nav>ul > li {
             padding-right: 5%;
@@ -48,7 +51,6 @@
         }
         body>header>nav>ul > li > a {
             color: white;
-            font-family: "Times New Roman";
             font-weight: bold;
             font-size: 1.2vw;
             text-decoration: none;
@@ -61,38 +63,39 @@
         }
         body>main>section>h1 {
             color: orangered;
-            font-size: 80px;
-            display: flex;
+            font-size: 69px;
             justify-content: center;
             align-items: center;
             position: absolute;
-            right: 200px;
+            right: 600px;
             top: 50px;
             margin: auto;
             display: inline-block;
 
         }
+        span{
+            color: white;
+        }
         body>main>section>nav>h5 {
-            color: orangered;
-            font-size: 30px;
             position: absolute;
-            right: 1050px;
-            top: 350px;
-            display: inline-block;
-            width: 150px;
+            right: 900px;
+            top: 300px;
+            width: 100px;
             text-decoration: none;
-
-            font-weight: 400;
             text-align: center;
             border:2px solid orangered;
             border-radius: 30px;
-            padding: 5px 20px;
-            margin: 30px 10px;
+            margin: 20px 5px;
+           display: inline-flex;
+            padding:1rem 2.8rem ;
+            background: black;
+            box-shadow: 0 0 1rem orange;
+            font-size: 1.6rem;
+            color: white;
+            letter-spacing: 1px;
+
 
         }
-
-
-
 
         body>main>section>div>img {
             display: inline-flex;
@@ -103,30 +106,31 @@
             border-radius: 50%;
             top: 100px;
             right: 500px;
-            margin-top: 100px;
-            margin-left: 40px;
-
+            margin-top: 40px;
+            margin-left: 60px;
         }
 
         body>main>section>aside>div>img{
-            width: 300px;
-            height: 300px;
-            border-radius: 100%;
+            width: 230px;
+            height: 320px;
             background: black;
             right: 900px;
             top: 300px;
-            margin-top: 40px;
+            margin-top: 80px;
             margin-right: 10px;
-            margin-left: 40px;
+            margin-left: 900px;
             grp:100px
         }
         body>main>section>h2 {
             color: orangered;
-            font-size: 60px;
+            font-size: 67px;
             display: flex;
             justify-content: center;
             gap: 2rem;
 
+        }
+        span{
+            color: white;
         }
 
         body>main>section>p>img {
@@ -138,7 +142,7 @@
             align-items: center;
             position: absolute;
             right: 900px;
-            top: 700px;
+            top: 750px;
             margin: 2px;
 
         }
@@ -152,89 +156,143 @@
             padding-top: 0.2%;
 
         }
-        body>main>section>section>section>div{
-        display: inline-flex;
-
-        width: 80px;
-        height: 80px;
-        border: 70px ;
-        border-radius: 100%;
-
-        top:100px;
-        right: 500px;
-        margin-top: 100px;
-        margin-right: 40px;
-        }
-        body>main>section>section>section>section>div{
-                   position: relative;
-                   border-radius: 2rem;
-                 box-shadow: 0 0 1rem ;
-                overflow: hidden;
-               display: flex;
-
-        }
-
-
-        body>main>section:nth-child(5)>aside {
-
-
-            margin-left: 200px;
-        }
-
         body>main>section:nth-child(3)>div{
-            margin-left: 200px;
-        }
-
-        body>main>section:nth-child(4)>div{
-            display: inline-block;
             margin-left: 100px;
+           display:inline-block ;
         }
 
-        body>main>section:nth-child(4)>div>img{
+
+        body>main>section:nth-child(3)>div>img{
             border-radius: 0%;
-            width: 300px;
-            height: 200px;
+            width: 140px;
+            height: 140px;
+
+
+
         }
 
-        body>main>section:nth-child(4)>div>h3{
-            color: white;
-            margin: 30px;
-            font-size: 29px;
-        }
 
-        body>main>section:nth-child(2)>div>h3{
-            color: white;
-            margin: 30px;
-            font-size: 29px;
-        }
-        body>main>section>section>section>section>section>section>h2>div{
-            background:orangered;
+
+
+
+
+        .portfolio-container{
             display: grid;
             grid-template-columns: repeat(2,1fr);
             align-items: center;
             gap: 2.5rem;
         }
-        body>main>section:nth-child(6)>div{
-            width: 60%;
 
-            background: black ;
-            color: white;
-
-            outline:none;
-
-
-            margin-top: 30px;
-            margin-right: 10px;
-            margin-left: 250px;
-
-            font-weight: 20;
+        .portfolio-container .portfolio-box{
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: orangered;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .portfolio-box img{
+            width: 350px;
+            height: 250px;
+           margin-left: 150px;
+            transition: 2s ease;
+        }
+        .portfolio-box:hover img{
+            transform: scale(1.1);
+        }
+        .portfolio-box .portfolio-layer {
+            position: absolute;
+            bottom: 0;
+            left: 70px;
+            width: 350px;
+            height: 250px;
+            background: linear-gradient(rgba(0,0,0,.1),orangered);
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 10px;
             text-align: center;
-            border:2px solid orangered;
-            border-radius: 40px;
-            padding: 5px 2px;
-
+            padding: 0 4rem;
+            transform: translateY(100%);
+            transition: .5s ease;
 
         }
+        .portfolio-box:hover .portfolio-layer{
+            transform: translateY(0);
+        }
+        .portfolio-layer h3{
+            font-size: 3rem;
+
+        }
+        .portfolio-layer p{
+            font-size: 1.6rem;
+            margin: .3rem 0 1rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        body>main>section:nth-child(6)>aside{
+            margin-left: 150px;
+        }
+        .contact form{
+            max-width: 40rem;
+            margin: 1rem auto;
+            text-align: center;
+            margin-bottom: 3rem;
+
+        }
+        .contact form .input-box{
+            display: inline-block;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+        .contact form .input-box input,
+        .contact form textarea{
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            color: white;
+            background-color: #2f242d;
+            border-radius: .8rem;
+            margin: .7rem 0;
+            border-color: orangered;
+        }
+        .contact form.input-box input{
+            width: 49%;
+
+        }
+        .contact form textarea{
+            resize: none;
+        }
+        .contact form .btn{
+            cursor: pointer;
+            border:2px solid orangered;
+           background-color: #2f242d;
+            border-radius: 20px;
+            margin: 20px 4px;
+            display: inline-flex;
+            padding:1rem 2.8rem ;
+            box-shadow: 0 0 1rem orange;
+            font-size: 1.6rem;
+            color: white;
+
+        }
+
 
 
 
@@ -253,7 +311,8 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">AboutMe </a></li>
             <li><a href="#">Skils</a></li>
-            <li><a href="#">Project</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Assignment</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">ContactMe</a></li>
 
@@ -265,13 +324,13 @@
     <section>
         <aside>
             <div>
-                <img src="assets/IMG-20230216-WA0050.jpg" width="300" height="400" >
+                <img src="assets/IMG-20230921-WA0007.jpg" width="400" height="400" >
             </div>
         </aside>
         <h1>
-            Hello,It's Me <div></div>
-            Hiruni Thathsara<div></div>
-            Full stack Developer
+            <span>  Hello, It's Me  </span><div></div>
+              Hiruni Thathsara <div></div>
+           Full stack Developer
         </h1>
         <nav><h5>Contacts</h5></nav>
         <div>
@@ -283,10 +342,10 @@
     </section>
     <section>
         <h2>
-            AboutMe
+            About  <span> Me </span>
         </h2>
         <p>
-            <img src="assets/IMG_20230608_103844_903.jpg"width="300" height="300">
+            <img src="assets/IMG_20230608_103844_903.jpg"width="300" height="200">
 
         </p>
         <p>
@@ -302,25 +361,52 @@
         <h2>
             Skils
         </h2>
-
+-
 
         <div> <img src="assets/java.png">
               <img src="assets/mysql.png">
               <img src="assets/figma.png">
               <img src="assets/html.png">
-              <img src="assets/js.jpg">
-              <img src="assets/ps.png">
+            <img src="assets/js.jpg"></div>
+            <div>  <img src="assets/ps.png">
               <img src="assets/css.png">
               <img src="assets/la.png"></div>
     </section>
+    <section class ="portfolio" id="portfolio">
+        <h2>Project</h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+
+
+        <img src= "assets/IMG_20230628_115933_033.jpg" width="300" height="300">
+                <div class="portfolio-layer">
+       <h3>Ginz Resturant</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minus non praesentium quia. Ad laboriosam magnam
+            quae soluta? Autem doloribus labore reprehenderit ullam. Adipisci perspiciatis rerum saepe sed tempore! Sed! </p>
+
+        </div>
+
+            </div>
+            <div class="portfolio-box">
+
+
+                <img src= "assets/IMG_20230628_115933_409.jpg" width="300" height="300">
+                <div class="portfolio-layer">
+                    <h3>Chat Aplication</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minus non praesentium quia. Ad laboriosam magnam
+                        quae soluta? Autem doloribus labore reprehenderit ullam. Adipisci perspiciatis rerum saepe sed tempore! Sed! </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
     <section>
-        <h2>Projects</h2>
-
-        <div><img src="assets/IMG_20230628_115933_033.jpg" width="800px" height="800px">&nbsp;
-            <img src="assets/IMG_20230628_115933_409.jpg" width="400" height="300">
-
-            <h3> GINZA  RESTAURANT &nbsp;&nbsp;&nbsp;&nbsp;  CHAT  APLICATION</h3> </div>
-
+        <h2>Assignment</h2>
     </section>
 
     <section>
@@ -336,19 +422,23 @@
 
 
 
-<section>
-    <h2>ContactMe</h2>
-    <div>
-          <br><br>
-         <input type="name" placeholder="Your Name" required> &nbsp; &nbsp;
-        <input type="email" placeholder="Your email address" required> &nbsp; &nbsp;
-        <input type="" placeholder="Your Mobile Number" required>
-        <div></div> <br> <br>
-         <textarea name=" "id=" " cols=" 45" rows="20" placeholder="How Can I Help You" required></textarea>&nbsp;&nbsp;
-        <input type="submit" value="Send Message" class="submit" required>
+<section class="contact" id="contact">
+    <h2>Contact <span> Me </span></h2>
+    <form action="#">
+          <div class="input-box">
+         <input type="text" placeholder="Your Name" > &nbsp; &nbsp;
+        <input type="email" placeholder="Your email address">
+
+
+        <input type="number" placeholder="Your Mobile Number" >
+
+        </div>
+
+         <textarea name=" "id=" " cols=" 30" rows="10" placeholder="Your Message" ></textarea>&nbsp;&nbsp;
+        <input type="submit" value="Send Message" class="btn" >
         <br>
 
-    </div>
+    </form>
 
 
 
