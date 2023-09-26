@@ -13,6 +13,9 @@
     <meta name="theme-color" content="purple">
     <link rel="stylesheet" href="normalize.css">
     <style>
+        *{
+            scroll-behavior: smooth;
+        }
 
         body{
             background-color: black;
@@ -23,8 +26,6 @@
             position: relative;
             background-color: #2f242d;
         }
-
-
         body>header>nav{
             position: absolute;
             width: 40%;
@@ -86,7 +87,7 @@
             border:2px solid orangered;
             border-radius: 30px;
             margin: 20px 5px;
-           display: inline-flex;
+            display: inline-flex;
             padding:1rem 2.8rem ;
             background: black;
             box-shadow: 0 0 1rem orange;
@@ -94,12 +95,9 @@
             color: white;
             letter-spacing: 1px;
 
-
         }
-
         body>main>section>div>img {
             display: inline-flex;
-
             width: 60px;
             height: 60px;
             border: 20px;
@@ -137,7 +135,6 @@
             width: 350px;
             height: 350px;
             display: inline-flex;
-
             justify-content: center;
             align-items: center;
             position: absolute;
@@ -158,24 +155,13 @@
         }
         body>main>section:nth-child(3)>div{
             margin-left: 100px;
-           display:inline-block ;
+            display:inline-block ;
         }
-
-
         body>main>section:nth-child(3)>div>img{
             border-radius: 0%;
             width: 140px;
             height: 140px;
-
-
-
         }
-
-
-
-
-
-
         .portfolio-container{
             display: grid;
             grid-template-columns: repeat(2,1fr);
@@ -193,7 +179,7 @@
         .portfolio-box img{
             width: 350px;
             height: 250px;
-           margin-left: 150px;
+            margin-left: 150px;
             transition: 2s ease;
         }
         .portfolio-box:hover img{
@@ -228,22 +214,6 @@
             font-size: 1.6rem;
             margin: .3rem 0 1rem;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         body>main>section:nth-child(6)>aside{
             margin-left: 150px;
@@ -282,7 +252,7 @@
         .contact form .btn{
             cursor: pointer;
             border:2px solid orangered;
-           background-color: #2f242d;
+            background-color: #2f242d;
             border-radius: 20px;
             margin: 20px 4px;
             display: inline-flex;
@@ -292,8 +262,6 @@
             color: white;
 
         }
-
-
 
 
 
@@ -317,11 +285,14 @@
             <li><a href="#">ContactMe</a></li>
 
         </ul>
+
     </nav>
+
 </header>
 <main>
 
     <section>
+
         <aside>
             <div>
                 <img src="assets/IMG-20230921-WA0007.jpg" width="400" height="400" >
@@ -329,12 +300,12 @@
         </aside>
         <h1>
             <span>  Hello, It's Me  </span><div></div>
-              Hiruni Thathsara <div></div>
-           Full stack Developer
+            Hiruni Thathsara <div></div>
+            Full stack Developer
         </h1>
         <nav><h5>Contacts</h5></nav>
         <div>
-          <img src=" assets/download.jpg">
+            <img src=" assets/download.jpg">
             <img src="assets/download.png">
             <img src="assets/git.png">
         </div>
@@ -354,23 +325,23 @@
             And also creating stand alone appllications. I was completed <b>English Diploma </b> at <b>Aquinas college</b>.
             I doing<b> Graduate Diploma in Software Engineering </b> at <b>IJSE Galle.</b>. I was completed my <b>Advance Level</b> and
             <b>Ordinary Level</b> at <b> Christ church girls ' college,</b> Galle.
-       </p>
+        </p>
 
     </section>
     <section>
         <h2>
             Skils
         </h2>
--
+        -
 
         <div> <img src="assets/java.png">
-              <img src="assets/mysql.png">
-              <img src="assets/figma.png">
-              <img src="assets/html.png">
+            <img src="assets/mysql.png">
+            <img src="assets/figma.png">
+            <img src="assets/html.png">
             <img src="assets/js.jpg"></div>
-            <div>  <img src="assets/ps.png">
-              <img src="assets/css.png">
-              <img src="assets/la.png"></div>
+        <div>  <img src="assets/ps.png">
+            <img src="assets/css.png">
+            <img src="assets/la.png"></div>
     </section>
     <section class ="portfolio" id="portfolio">
         <h2>Project</h2>
@@ -379,13 +350,13 @@
             <div class="portfolio-box">
 
 
-        <img src= "assets/IMG_20230628_115933_033.jpg" width="300" height="300">
+                <img src= "assets/IMG_20230628_115933_033.jpg" width="300" height="300">
                 <div class="portfolio-layer">
-       <h3>Ginz Resturant</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minus non praesentium quia. Ad laboriosam magnam
-            quae soluta? Autem doloribus labore reprehenderit ullam. Adipisci perspiciatis rerum saepe sed tempore! Sed! </p>
+                    <h3>Ginz Resturant</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minus non praesentium quia. Ad laboriosam magnam
+                        quae soluta? Autem doloribus labore reprehenderit ullam. Adipisci perspiciatis rerum saepe sed tempore! Sed! </p>
 
-        </div>
+                </div>
 
             </div>
             <div class="portfolio-box">
@@ -413,54 +384,38 @@
 
         <h2>Gallery</h2>
         <aside>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src= "assets/IMG_20230627_160944_062.jpg" width="300" height="300">
-        <img src="assets/IMG-20230123-WA0039.jpg" width="400" height="300">
-        <img src="assets/IMG-20230302-WA0049.jpg"width="200" height="300"></aside>
+            <img src="assets/IMG-20230123-WA0039.jpg" width="400" height="300">
+            <img src="assets/IMG-20230302-WA0049.jpg"width="200" height="300"></aside>
         <aside>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/IMG-20220909-WA0020.jpg" width="400" height="250">
-        <img src="assets/IMG_20230628_111153_356.jpg"width="400" height="250"></aside>
+            <img src="assets/IMG_20230628_111153_356.jpg"width="400" height="250"></aside>
 
     </section>
 
 
 
-<section class="contact" id="contact">
-    <h2>Contact <span> Me </span></h2>
-    <form action="#">
-          <div class="input-box">
-         <input type="text" placeholder="Your Name" > &nbsp; &nbsp;
-        <input type="email" placeholder="Your email address">
+    <section class="contact" id="contact">
+        <h2>Contact <span> Me </span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Your Name" > &nbsp; &nbsp;
+                <input type="email" placeholder="Your email address">
 
 
-        <input type="number" placeholder="Your Mobile Number" >
+                <input type="number" placeholder="Your Mobile Number" >
 
-        </div>
+            </div>
 
-         <textarea name=" "id=" " cols=" 30" rows="10" placeholder="Your Message" ></textarea>&nbsp;&nbsp;
-        <input type="submit" value="Send Message" class="btn" >
-        <br>
+            <textarea name=" "id=" " cols=" 30" rows="10" placeholder="Your Message" ></textarea>&nbsp;&nbsp;
+            <input type="submit" value="Send Message" class="btn" >
+            <br>
 
-    </form>
+        </form>
 
 
 
-</section>
+    </section>
 </main>
-    <footer>
+<footer>
 </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
