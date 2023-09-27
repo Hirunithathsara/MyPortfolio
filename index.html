@@ -214,6 +214,54 @@
             font-size: 1.6rem;
             margin: .3rem 0 1rem;
         }
+        .assignments-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .assignments-container .assignments-box{
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: orangered;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .assignments-box img{
+            width: 280px;
+            height: 180px;
+            margin-left: 140px;
+            transition: 2s ease;
+        }
+        .assignments-box:hover img{
+            transform: scale(1.1);
+        }
+        .assignments-box .assignments-layer {
+            position: absolute;
+            bottom: 0;
+            left: 70px;
+            width: 280px;
+            height: 180px;
+            background: linear-gradient(rgba(0,0,0,.1),orangered);
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 10px;
+            text-align: center;
+            padding: 0 4rem;
+            transform: translateY(100%);
+            transition: .5s ease;
+
+        }
+        .assignments-box:hover .assignments-layer{
+            transform: translateY(0);
+        }
+        .assignments-layer h3{
+            font-size: 3rem;
+
+        }
 
         body>main>section:nth-child(6)>aside{
             margin-left: 150px;
@@ -271,29 +319,27 @@
 </head>
 <body>
 
+
 <header>
 
     <h1>HT</h1>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">AboutMe </a></li>
-            <li><a href="#">Skils</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Assignment</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">ContactMe</a></li>
-
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">AboutMe </a></li>
+            <li><a href="#skils">Skils</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#assignment">Assignment</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contactme">ContactMe</a></li>
         </ul>
-
     </nav>
-
 </header>
 <main>
+        <section>
 
-    <section>
+         <aside>
 
-        <aside>
             <div>
                 <img src="assets/IMG-20230921-WA0007.jpg" width="400" height="400" >
             </div>
@@ -352,7 +398,7 @@
 
                 <img src= "assets/IMG_20230628_115933_033.jpg" width="300" height="300">
                 <div class="portfolio-layer">
-                    <h3>Ginz Resturant</h3>
+                    <h3>Ginza Restaurant</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minus non praesentium quia. Ad laboriosam magnam
                         quae soluta? Autem doloribus labore reprehenderit ullam. Adipisci perspiciatis rerum saepe sed tempore! Sed! </p>
 
@@ -364,7 +410,7 @@
 
                 <img src= "assets/IMG_20230628_115933_409.jpg" width="300" height="300">
                 <div class="portfolio-layer">
-                    <h3>Chat Aplication</h3>
+                    <h3>Chat Application</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minus non praesentium quia. Ad laboriosam magnam
                         quae soluta? Autem doloribus labore reprehenderit ullam. Adipisci perspiciatis rerum saepe sed tempore! Sed! </p>
 
@@ -376,8 +422,34 @@
 
 
     </section>
-    <section>
-        <h2>Assignment</h2>
+    <section class ="assignments" id="Assignments">
+        <h2>Assignments</h2>
+
+        <div class="assignments-container">
+            <div class="assignments-box">
+
+                <img src= "assets/Screenshot (5).png" width="200" >
+                <div class="assignments-layer">
+                    <h3>CSS Assignments</h3>
+                </div>
+
+            </div>
+            <div class="assignments-box">
+                <img src= "assets/Screenshot (4).png" width="300" >
+                <div class="assignments-layer">
+                    <h3>Transition Assignments</h3>
+                </div>
+            </div>
+            <div class="assignments-box">
+                <img src= "assets/Screenshot (3).png" width="300" >
+                <div class="assignments-layer">
+                    <h3>Animations Assignments</h3>
+                </div>
+            </div>
+        </div>
+
+
+
     </section>
 
     <section>
@@ -417,5 +489,6 @@
 </main>
 <footer>
 </footer>
+
 </body>
 </html>
