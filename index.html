@@ -57,7 +57,6 @@
             text-decoration: none;
             transition:.3s ;
         }
-
         body>main{
             height: 90vh;
             position: relative;
@@ -72,7 +71,6 @@
             top: 50px;
             margin: auto;
             display: inline-block;
-
         }
         span{
             color: white;
@@ -94,7 +92,6 @@
             font-size: 1.6rem;
             color: white;
             letter-spacing: 1px;
-
         }
         body>main>section>div>img {
             display: inline-flex;
@@ -107,7 +104,6 @@
             margin-top: 40px;
             margin-left: 60px;
         }
-
         body>main>section>aside>div>img{
             width: 230px;
             height: 320px;
@@ -125,12 +121,10 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
-
         }
         span{
             color: white;
         }
-
         body>main>section>p>img {
             width: 350px;
             height: 350px;
@@ -141,7 +135,6 @@
             right: 900px;
             top: 750px;
             margin: 2px;
-
         }
         body>main>section>p{
 
@@ -151,7 +144,6 @@
             margin: 0;
             padding-left: 48%;
             padding-top: 0.2%;
-
         }
         body>main>section:nth-child(3)>div{
             margin-left: 100px;
@@ -168,7 +160,6 @@
             align-items: center;
             gap: 2.5rem;
         }
-
         .portfolio-container .portfolio-box{
             position: relative;
             border-radius: 2rem;
@@ -210,14 +201,12 @@
             font-size: 3rem;
 
         }
-
         .assignments-container{
             display: grid;
             grid-template-columns: repeat(3,1fr);
             align-items: center;
             gap: 2.5rem;
         }
-
         .assignments-container .assignments-box{
             position: relative;
             border-radius: 2rem;
@@ -257,9 +246,7 @@
         }
         .assignments-layer h3{
             font-size: 3rem;
-
         }
-
         body>main>section:nth-child(6)>aside{
             margin-left: 150px;
         }
@@ -268,13 +255,11 @@
             margin: 1rem auto;
             text-align: center;
             margin-bottom: 3rem;
-
         }
         .contact form .input-box{
             display: inline-block;
             justify-content: space-between;
             flex-wrap: wrap;
-
         }
         .contact form .input-box input,
         .contact form textarea{
@@ -289,7 +274,6 @@
         }
         .contact form.input-box input{
             width: 49%;
-
         }
         .contact form textarea{
             resize: none;
@@ -307,36 +291,29 @@
             color: white;
 
         }
-
-
-
-
-
     </style>
 </head>
+
 <body>
-
-
 <header>
-
     <h1>HT</h1>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#aboutme">AboutMe </a></li>
             <li><a href="#skils">Skils</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#assignment">Assignment</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#assignments">Assignment</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contactme">ContactMe</a></li>
+
         </ul>
     </nav>
 </header>
 <main>
-        <section>
+        <section id="home">
 
          <aside>
-
             <div>
                 <img src="assets/IMG-20230921-WA0007.jpg" width="400" height="400" >
             </div>
@@ -352,9 +329,8 @@
             <img src="assets/download.png">
             <img src="assets/git.png">
         </div>
-
     </section>
-    <section>
+    <section id="aboutme">
         <h2>
             About  <span> Me </span>
         </h2>
@@ -371,11 +347,10 @@
         </p>
 
     </section>
-    <section>
+    <section id="skils">
         <h2>
             Skils
         </h2>
-        -
 
         <div> <img src="assets/java.png">
             <img src="assets/mysql.png">
@@ -388,67 +363,60 @@
     </section>
     <section class ="portfolio" id="portfolio">
         <h2>Project</h2>
-
         <div class="portfolio-container">
             <div class="portfolio-box">
-
-
                 <img src= "assets/IMG_20230628_115933_033.jpg" width="300" height="300">
                 <div class="portfolio-layer">
                     <h3>Ginza Restaurant</h3>
-
-
                 </div>
 
             </div>
             <div class="portfolio-box">
-
-
                 <img src= "assets/IMG_20230628_115933_409.jpg" width="300" height="300">
                 <div class="portfolio-layer">
                     <h3>Chat Application</h3>
-
-
                 </div>
 
             </div>
         </div>
-
-
-
     </section>
     <section class ="assignments" id="Assignments">
         <h2>Assignments</h2>
 
         <div class="assignments-container">
-            <div class="assignments-box">
+            <a href="Pages/assignments.html" target="_blank">
+                <div class="assignments-box">
 
-                <img src= "assets/Screenshot (5).png" width="200" >
-                <div class="assignments-layer">
-                    <h3>CSS Assignments</h3>
-                </div>
+                    <img src= "assets/Screenshot (5).png" width="200" >
+                    <div class="assignments-layer">
+                        <h3>CSS Assignments</h3>
+                    </div>
 
-            </div>
-            <div class="assignments-box">
-                <img src= "assets/Screenshot (4).png" width="300" >
-                <div class="assignments-layer">
-                    <h3>Transition Assignments</h3>
                 </div>
-            </div>
-            <div class="assignments-box">
-                <img src= "assets/Screenshot (3).png" width="300" >
-                <div class="assignments-layer">
-                    <h3>Animations Assignments</h3>
+            </a>
+
+            <a href="Pages/transitions.html" target="_blank">
+                <div class="assignments-box">
+                    <img src= "assets/Screenshot (4).png" width="300" >
+                    <div class="assignments-layer">
+                        <h3>Transition Assignments</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
+
+            <a href="Pages/Animations.html" target="_blank">
+                <div class="assignments-box">
+                    <img src= "assets/Screenshot (3).png" width="300" >
+                    <div class="assignments-layer">
+                        <h3>Animations Assignments</h3>
+                    </div>
+                </div>
+            </a>
+
         </div>
-
-
-
     </section>
 
-    <section>
-
+    <section id="gallery">
         <h2>Gallery</h2>
         <aside>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src= "assets/IMG_20230627_160944_062.jpg" width="300" height="300">
             <img src="assets/IMG-20230123-WA0039.jpg" width="400" height="300">
@@ -458,16 +426,12 @@
 
     </section>
 
-
-
     <section class="contact" id="contact">
         <h2>Contact <span> Me </span></h2>
         <form action="#">
             <div class="input-box">
                 <input type="text" placeholder="Your Name" > &nbsp; &nbsp;
                 <input type="email" placeholder="Your email address">
-
-
                 <input type="number" placeholder="Your Mobile Number" >
 
             </div>
@@ -477,13 +441,9 @@
             <br>
 
         </form>
-
-
-
     </section>
 </main>
 <footer>
 </footer>
-
 </body>
 </html>
