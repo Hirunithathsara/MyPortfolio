@@ -1,7 +1,7 @@
 var customerDB = [
-    {id: "C00-001", name: "Savindi Rashmika", address: "Matara", salary: 45000},
-    {id: "C00-002", name: "Nethmi Thathsarani", address: "Matara", salary: 35000},
-    {id: "C00-003", name: "Lasini Prebashi", address: "Ahangama", salary: 35000}
+    {id: "C00-001", name: "Hiruni Thathsara", address: "Galle", salary: 45000},
+    {id: "C00-002", name: "Nethmi ", address: "Galle", salary: 35000},
+    {id: "C00-003", name: "Sasmi", address: "Galle", salary: 35000}
 ];
 
 var itemDB = [
